@@ -1,0 +1,50 @@
+cabal-version:      2.4
+name:               plutology
+version:            0.1.0.0
+
+license: Apache-2.0
+license-files: LICENSE
+
+-- A copyright notice.
+-- copyright:
+-- category:
+-- extra-source-files: CHANGELOG.md
+
+flag defer-plugin-errors
+    description:
+        Defer errors from the plugin, useful for things like Haddock that can't handle it.
+    default: True
+    manual: True
+
+common lang
+    default-language:   Haskell2010
+    ghc-options:
+      -Wall -Wnoncanonical-monad-instances
+      -Wincomplete-uni-patterns -Wincomplete-record-updates
+      -Wredundant-constraints -Widentities
+      -Wcompat -Wmissing-export-lists
+      -Wmissing-deriving-strategies
+      -Wno-orphans
+      -- See Plutus Tx readme
+      -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
+    if flag(defer-plugin-errors)
+        ghc-options: -fplugin-opt PlutusTx.Plugin:defer-errors
+
+executable main
+  import: lang
+  main-is: Main.hs
+  hs-source-dirs: bin
+  ghc-options:
+    -threaded
+  build-depends:
+    base >= 4.9 && < 5,
+  build-depends:
+    , data-default
+    , plutus-contract
+    , plutus-ledger
+    , plutus-ledger-api
+    , plutus-script-utils
+    , plutus-tx
+    , plutus-tx-plugin
+    , tasty
+    , text
