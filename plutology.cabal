@@ -37,12 +37,13 @@ executable main
   ghc-options:
     -threaded
   build-depends:
-    base >= 4.9 && < 5,
+    , base
   build-depends:
     , data-default
     , plutus-contract
     , plutus-ledger
     , plutus-ledger-api
+    , plutus-ledger-constraints
     , plutus-script-utils
     , plutus-tx
     , plutus-tx-plugin
