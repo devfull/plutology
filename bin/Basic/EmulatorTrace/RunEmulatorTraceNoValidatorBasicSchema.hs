@@ -2,6 +2,10 @@
 
 {- --------------------------------------------------------------- -}
 {- How to run a purely off-chain contract with a schema ?          -}
+{-                                                                 -}
+{-   Use `callEndpoint` from `Plutus.Trace` on an instance         -}
+{-   of a contract with a nonempty schema.                         -}
+{-                                                                 -}
 {- --------------------------------------------------------------- -}
 
 {- cabal:

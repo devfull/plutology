@@ -2,6 +2,13 @@
 
 {- --------------------------------------------------------------- -}
 {- How to get the currency symbol of a minting policy script ?     -}
+{-                                                                 -}
+{-   Use `scriptCurrencySymbol` from `plutus-script-utils`         -}
+{-   that converts a `MintingPolicy` to a `CurrencySymbol`.        -}
+{-                                                                 -}
+{-   This script shows that different `MintingPolicy`s have        -}
+{-   different `CurrencySymbol`s.                                  -}
+{-                                                                 -}
 {- --------------------------------------------------------------- -}
 
 {- cabal:

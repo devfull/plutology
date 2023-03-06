@@ -2,6 +2,14 @@
 
 {- --------------------------------------------------------------- -}
 {- How to run an emulator trace on a purely off-chain contract ?   -}
+{-                                                                 -}
+{-   Use `runEmulatorTraceIO` from `Plutus.Trace`.                 -}
+{-                                                                 -}
+{-   This script runs a simple trace, that only activate a         -}
+{-   a trivial contract. The contract just logs a message,         -}
+{-   effectively showing that the `Contract` monad can run         -}
+{-   without validating transaction with an actual validator.      -}
+{-                                                                 -}
 {- --------------------------------------------------------------- -}
 
 {- cabal:

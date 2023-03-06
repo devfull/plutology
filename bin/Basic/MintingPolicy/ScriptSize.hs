@@ -2,6 +2,15 @@
 
 {- --------------------------------------------------------------- -}
 {- How to get the size of a minting policy script ?                -}
+{-                                                                 -}
+{-   Use `scriptSize` and `unMintingPolicyScript`                  -}
+{-   from `Ledger.Scripts`.                                        -}
+{-                                                                 -}
+{-   This script shows that different `MintingPolicy`s have        -}
+{-   different script sizes. Most notably, a typed validator       -}
+{-   script have a much higher size than their untyped             -}
+{-   implementation.                                               -}
+{-                                                                 -}
 {- --------------------------------------------------------------- -}
 
 {- cabal:
