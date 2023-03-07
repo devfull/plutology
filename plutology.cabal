@@ -39,6 +39,7 @@ executable main
   build-depends:
     , base
   build-depends:
+    , aeson
     , data-default
     , plutus-contract
     , plutus-ledger
