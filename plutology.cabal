@@ -41,6 +41,7 @@ executable main
   build-depends:
     , aeson
     , data-default
+    , freer-extras
     , plutus-contract
     , plutus-ledger
     , plutus-ledger-api
