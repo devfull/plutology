@@ -18,3 +18,4 @@ scripts, each one focusing on a specific aspect.
 - [How to run a purely off-chain contract with a schema ?](bin/Basic/EmulatorTrace/RunEmulatorTraceNoValidatorBasicSchema.hs)
 - [How to run an emulator trace with a simpler trace config ?](bin/Basic/EmulatorTrace/SimpleTraceConfig.hs)
 - [What happen when activating the same contract again ?](bin/Basic/EmulatorTrace/TwoActivateContractNoEndpoint.hs)
+- [What happen when calling endpoints on another contract instance ?](bin/Basic/EmulatorTrace/TwoActivateContractOnEndpoint.hs)
