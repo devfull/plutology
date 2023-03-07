@@ -37,7 +37,7 @@ import PlutusTx.Trace qualified
 
 import Plutus.V1.Ledger.Api qualified
     as Ledger                               ( MintingPolicy, mkMintingPolicyScript )
-import Plutus.V1.Ledger.Contexts
+import Plutus.V1.Ledger.Contexts qualified
     as Ledger                               ( ScriptContext )
 import Plutus.V1.Ledger.Scripts qualified
     as Ledger                               ( scriptSize, unMintingPolicyScript )

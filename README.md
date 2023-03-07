@@ -9,6 +9,7 @@ scripts, each one focusing on a specific aspect.
 
 - [How to get the currency symbol of a minting policy script ?](bin/Basic/MintingPolicy/CurrencySymbol.hs)
 - [How to get the size of a minting policy script ?](bin/Basic/MintingPolicy/ScriptSize.hs)
+- [How to reduce the script size with a custom script context ?](bin/Basic/MintingPolicy/CustomScriptContext.hs)
 - [How to mint a token ?](bin/Basic/MintingPolicy/SubmitTxConstraintsWith.hs)
 
 ### 1.2 &nbsp; EmulatorTrace
