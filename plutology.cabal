@@ -42,6 +42,7 @@ executable main
     , aeson
     , data-default
     , freer-extras
+    , freer-simple
     , plutus-contract
     , plutus-ledger
     , plutus-ledger-api
