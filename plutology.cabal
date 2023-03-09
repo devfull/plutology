@@ -40,6 +40,8 @@ executable main
     , base
   build-depends:
     , aeson
+    , composition
+    , containers
     , data-default
     , freer-extras
     , freer-simple
@@ -50,5 +52,6 @@ executable main
     , plutus-script-utils
     , plutus-tx
     , plutus-tx-plugin
+    , prettyprinter
     , tasty
     , text

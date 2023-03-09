@@ -21,3 +21,4 @@ scripts, each one focusing on a specific aspect.
 - [What happen when calling endpoints on another contract instance ?](bin/Basic/EmulatorTrace/TwoActivateContractOnEndpoint.hs)
 - [How the EmulatorTrace can know the state of a Contract ?](bin/Basic/EmulatorTrace/ObservableStateNoEndpoint.hs)
 - [How the EmulatorTrace can avoid missed callEndpoint ?](bin/Basic/EmulatorTrace/EndpointBasicScheduler.hs)
+- [How to initialize a mock wallet with an initial token ?](bin/Basic/EmulatorTrace/InitialDistributionWithToken.hs)
